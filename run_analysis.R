@@ -4,7 +4,9 @@ dati<- rbind(read.csv("UCI HAR Dataset/test/X_test.txt",colClasses = rep("numeri
 colnames(dati) <- read.csv("UCI HAR Dataset/features.txt",sep="", header=FALSE,stringsAsFactors = FALSE)[,2]
 
 ## Assignment task 2.	Extracts only the measurements on the mean and standard deviation for each measurement
-#filter mean and std
+#filter mean() and std()
+# variables called MeanFreq will not be considered as they are "weighted averages" as the codebook says and not means
+# variables called angle(...Mean) will not be considered as they are angles and not means
 dati <- dati[,grepl("std\\(", names(dati)) | grepl("mean\\(", names(dati))]
 
 ## Assignment task 3.Use descriptive activity names to name the activities in the data set

@@ -8,7 +8,9 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 ## Transformed signals
 The tidy dataset comes from a statistical transformation of the original dataset to obtain only the variables measurement of the original dataset regarding the mean and standard deviation of the measurement by Subject and Activity.
-**The variables related to columns containig "meanFreq()" where not included because as the Codebook states they are weighted averages and not means **
+- *The variables related to columns containig "meanFreq()" where not included because as the Codebook states they are weighted averages and not means.*
+- *Variables called *angle(...Mean...)* were not included as they are angles of means and not means* 
+
 So each row has the mean of all the measurement of a single subject in a single activity. (E.g. Time Domain Body Acceleration Mean in Axis-X for subject 1 in WALKING, contains the mean of the body acceleration for subject 1 while walking)
 Being the average and standard deviation of the original signals they mantains the same dimensional units of the original signals.
 
