@@ -12,8 +12,8 @@ The scripts uses temporary variables to store the intermediate results from step
 In details the following transformations have been performed on the data:
 
 - 2. Extracted only the measurements on the mean and standard deviation for each measurement
-  1  Variables called *...MeanFreq...* will not be considered as they are "weighted averages" as the codebook says and not means
-  2 Variables called *angle(...Mean...)* will not be considered as they are angles of means and not means
+  -  Variables called *...MeanFreq...* will not be considered as they are "weighted averages" as the codebook says and not means
+  - Variables called *angle(...Mean...)* will not be considered as they are angles of means and not means
 - 3. Read the descriptive activity from file and applied them to the dataset
 - 3a. Added the activity & subject columns to the dataset as factors to obtain a complete dataset
 - 4. Appropriately labelled the data set with descriptive variable names.
